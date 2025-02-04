@@ -12,12 +12,7 @@ const Header = () => (
       </Link>
       <nav className="w-full md:w-auto order-2 md:order-2">
         <ul className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-8 items-center justify-center md:justify-end w-full text-md md:text-base">
-          <li className="col-span-1 flex-1 mr-1 md:flex-none text-center text-xl pl-4">
-            <Link to="/Illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link>
-          </li>
-          <li className="col-span-1 flex-1 md:flex-none text-center text-xl">
-            <Link to="/WebDesign" className="hover:text-gray-600">WEB DESIGN</Link>
-          </li>
+    
           <li className="col-span-1 flex-1 md:flex-none text-center text-xl">
             <Link to="/About" className="hover:text-gray-600">ABOUT</Link>
           </li>

@@ -33,6 +33,9 @@ import gammaPhiWatercolor from '../assets/images/APPAREL/gamma phi watercolor co
 import indyBarCrawl from '../assets/images/APPAREL/indy bar crawl.png';
 import sigmaKappa from '../assets/images/APPAREL/sigma kappa.png';
 import paramoreWork from '../assets/images/APPAREL/paramore-work.png';
+import greenDayWhatsername from '../assets/images/APPAREL/whatsername.png';
+import mcrYoung from '../assets/images/APPAREL/mcr when we were young.png';
+import mcrBlackParade from '../assets/images/APPAREL/black parade.png';
 
 // FullScreenImage component
 const FullScreenImage = ({ src, onClose, prevImage, nextImage }) => {
@@ -119,7 +122,10 @@ const Illustrations = () => {
     gammaPhiWatercolor,
     indyBarCrawl,
     sigmaKappa,
-    paramoreWork
+    paramoreWork,
+    mcrBlackParade,
+    mcrYoung,
+    greenDayWhatsername
   ];
 
   const handleImageClick = (src, index) => {
@@ -161,6 +167,33 @@ const Illustrations = () => {
             Designs and illustrations created using Adobe Illustrator, InDesign, Photoshop, and Fresco. Composition, typography, and creative illustration were key components in creating these designs.
           </p>
 
+                    {/* MCR Black Parade Art */}
+                    <img
+            src={mcrBlackParade}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(mcrBlackParade, 0)}
+            alt="my chemical romance black parade artwork"
+          />
+
+                 {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={mcrYoung}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(mcrYoung, 1)}
+              alt="my chemical romance when we were young 2024 artwork"
+            />
+            <img
+              src={greenDayWhatsername}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(greenDayWhatsername, 2)}
+              alt="green day whatsername illustration"
+            />
+          </div>
+
+
+   
+
           {/* Paramore Illustrated Collage */}
           <img
             src={paramoreBag}
@@ -175,6 +208,7 @@ const Illustrations = () => {
 >
   Process
 </a>
+
 
           {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
