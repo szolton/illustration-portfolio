@@ -1,0 +1,48 @@
+/* FullScreenImage.css */
+.full-screen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .full-screen-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+  
+  .full-screen-button {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .full-screen-button.close {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .full-screen-button.prev {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .full-screen-button.next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
